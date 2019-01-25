@@ -21,7 +21,7 @@ def main():
     run_test_fancy_sums_of_digits()
 
     # -------------------------------------------------------------------------
-    # TODO: 9. DO THIS LAST!
+    # done: 9. DO THIS LAST!
     #    -- Uncomment the line of code below to run the main function
     #         in m4t_tester.py (do not make changes to it).
     #         It runs OUR tests on your code.
@@ -32,7 +32,7 @@ def main():
     #       ** Ask a TA or your professor for help in that case. **
     # -------------------------------------------------------------------------
 
-    # m4t_tester.main()
+    m4t_tester.main()
 
 
 def run_test_sum_of_digits():
@@ -239,7 +239,7 @@ def digits_in_power(n, k):
     return sum_of_digits(powered_n)
 
     # -------------------------------------------------------------------------
-    # TODO: 6. Implement and test this function.
+    # done: 6. Implement and test this function.
     #
     ###########################################################################
     # IMPORTANT: CALL, as many times as needed,
@@ -270,6 +270,24 @@ def run_test_fancy_sums_of_digits():
     # your 2nd and 3rd tests but READ THOSE TEST CASES CAREFULLY
     # in the doc-string to be sure that you understand the specification.
     # -------------------------------------------------------------------------
+#Test 1:
+    expected = 1
+    answer = fancy_sums_of_digits(10)
+    print('Test 1 expected:', expected)
+    print('       actual:  ', answer)
+
+# Test 2:
+    expected = 19084
+    answer = fancy_sums_of_digits(2)
+    print('Test 2 expected:', expected)
+    print('       actual:  ', answer)
+
+# Test 3:
+    expected = 124309
+    answer = fancy_sums_of_digits(35)
+    print('Test 3 expected:', expected)
+    print('       actual:  ', answer)
+
 
 
 def fancy_sums_of_digits(n):
@@ -295,15 +313,21 @@ def fancy_sums_of_digits(n):
                      (don't try to print it!)
             -- the sum of the digits in (X ** Y) is 124309 (trust me!)
             -- so this function returns 124309.
-    """
-    # -------------------------------------------------------------------------
-    # TODO: 8. Implement and test this function.
-    #
-    ###########################################################################
-    # IMPORTANT: CALL, as many times as needed,
-    #    the    sum_of_digits    function that is DEFINED ABOVE.
-    ###########################################################################
-    # -------------------------------------------------------------------------
+
+   """
+    x = sum_of_digits(n**1000)
+    y = sum_of_digits(n**999)
+    fancydigits = sum_of_digits(x**y)
+    return fancydigits
+
+# -------------------------------------------------------------------------
+# done: 8. Implement and test this function.
+#
+###########################################################################
+# IMPORTANT: CALL, as many times as needed,
+#    the    sum_of_digits    function that is DEFINED ABOVE.
+###########################################################################
+# -------------------------------------------------------------------------
 
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
