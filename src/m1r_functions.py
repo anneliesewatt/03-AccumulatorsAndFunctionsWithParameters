@@ -1,11 +1,11 @@
 ###############################################################################
 #
-# TODO:
+# Done:
 #   1. READ the code below.
 #   2. TRACE (by hand) the execution of the code,
 #        predicting what will get printed.
 #   3. Run the code and compare your prediction to what actually was printed.
-#   4. Decide whether you are 100% clear on the CONCEPTS and the NOTATIONS for:
+#   4. Decide if you are 100% clear on the CONCEPTS and the NOTATIONS for:
 #        -- DEFINING a function that has PARAMETERS
 #        -- CALLING a function with actual ARGUMENTS.
 #
