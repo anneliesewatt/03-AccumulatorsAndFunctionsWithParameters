@@ -124,7 +124,7 @@ def sum_of_digits(number):
 def run_test_digits_in_cube():
     """ Tests the   digits_in_cube   function. """
     # -------------------------------------------------------------------------
-    # TODO: 3. Implement this function.
+    # done: 3. Implement this function.
     #   It TESTS the  digits_in_cube  function defined below.
     #   Include at least **   3   ** tests.
     #
@@ -148,6 +148,24 @@ def run_test_digits_in_cube():
     print('-----------------------------------------------------')
     print('Testing the   digits_in_cube   function:')
     print('-----------------------------------------------------')
+# Test 1:
+    expected = 8
+    answer = digits_in_cube(5)
+    print('Test 1 expected:', expected)
+    print('       actual:  ', answer)
+
+# Test 2:
+    expected = 1
+    answer = digits_in_cube(1)
+    print('Test 1 expected:', expected)
+    print('       actual:  ', answer)
+
+# Test 3:
+    expected = 10
+    answer = digits_in_cube(4)
+    print('Test 1 expected:', expected)
+    print('       actual:  ', answer)
+
 
 
 def digits_in_cube(n):
@@ -169,6 +187,8 @@ def digits_in_cube(n):
     #    the    sum_of_digits    function that is DEFINED ABOVE.
     ###########################################################################
     # -------------------------------------------------------------------------
+    cubed_n = n**3
+    return sum_of_digits(cubed_n)
 
 
 def run_test_digits_in_power():
