@@ -7,8 +7,8 @@ This module demonstrates and practices:
   -- UNIT TESTING.
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
-         Aaron Wilkin, their colleagues, and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         Aaron Wilkin, their colleagues, and A. Watt.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import m4t_tester
 
@@ -69,10 +69,24 @@ def run_test_sum_of_digits():
     print('       actual:  ', answer)
 
     # -------------------------------------------------------------------------
-    # TO DO: 2 (continued).
+    # done: 2 (continued).
     # Below this comment, add 3 more test cases of your own choosing.
     # -------------------------------------------------------------------------
 
+    expected = 17
+    answer = sum_of_digits(467)
+    print('Test 1 expected:', expected)
+    print('        actual:  ', answer)
+
+    expected = 12
+    answer = sum_of_digits(318)
+    print('Test 1 expected:', expected)
+    print('        actual:  ', answer)
+
+    expected = 14
+    answer = sum_of_digits(914)
+    print('Test 1 expected:', expected)
+    print('        actual:  ', answer)
 
 def sum_of_digits(number):
     """
