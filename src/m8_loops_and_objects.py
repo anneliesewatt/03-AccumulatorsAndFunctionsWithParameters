@@ -244,6 +244,6 @@ def draw_cosines_and_sines():
 
 
 # -----------------------------------------------------------------------------
-# Calls  main  to start the ball rolling.
+# Calls  main  to start the ball rolling
 # -----------------------------------------------------------------------------
 main()
