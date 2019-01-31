@@ -16,8 +16,10 @@ def main():
     """ Calls the other functions to demonstrate and/or test them. """
     # Test your functions by putting calls to them here:
 
-
     print_sequence1()
+    draw_circles1()
+    print_sequence2()
+    #draw_circles2()
 
 def print_sequence1():
     """
@@ -54,7 +56,7 @@ def draw_circles1():
     -- Waits for the user to press the mouse, then closes the window.
     """
     # -------------------------------------------------------------------------
-    # TODO: 3. Implement this function, per its doc-string above.
+    # done: 3. Implement this function, per its doc-string above.
     # Put a statement in  main  to test this function.
     # REQUIREMENT: You must use a   RANGE  statement to solve this problem.
     # HINT: You might find a prior module useful when 'writing' this code.
@@ -64,6 +66,16 @@ def draw_circles1():
     print('Running draw_circles1:  See graphics window')
     print('--------------------------------------------------')
 
+    window = rg.RoseWindow (400,400)
+
+    for k in range (22):
+        radius = 10 * k
+        circle = rg.Circle(rg.Point(200,200),radius)
+        circle.attach_to(window)
+
+    window.render()
+
+    window.close_on_mouse_click()
 
 def print_sequence2():
     """
@@ -77,7 +89,7 @@ def print_sequence2():
       390.
     """
     # -------------------------------------------------------------------------
-    # TODO: 4. Implement this function, per its doc-string above.
+    # done: 4. Implement this function, per its doc-string above.
     # Put a statement in  main  to test this function.
     # REQUIREMENT: You must use a   RANGE  statement to solve this problem.
     # -------------------------------------------------------------------------
@@ -85,6 +97,10 @@ def print_sequence2():
     print('--------------------------------------------------')
     print('Running print_sequence2:')
     print('--------------------------------------------------')
+
+    total = 0
+    for k in range (50,400,20):
+        print (k)
 
 
 def draw_circles2():
